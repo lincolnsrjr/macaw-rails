@@ -1,1 +1,1 @@
-macaw-rails
+Ruby on Rails project using Bootstap Dashboard
