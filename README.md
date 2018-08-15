@@ -1,1 +1,1 @@
-Ruby on Rails project using Bootstap Dashboard
+Ruby on Rails project using Bootstrap Dashboard
