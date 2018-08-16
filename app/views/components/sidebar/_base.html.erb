@@ -1,0 +1,15 @@
+<nav class="side-navbar">
+  <ul class="list-unstyled">
+    <%= render 'components/sidebar/item', url: root_path, icon: 'icon-home', name: :home %>
+    <%= render 'components/sidebar/dropdown',
+      name: :teste,
+      icon: 'icon-interface-windows',
+      items: [{name: :teste, url: root_path }]
+    %>
+    <%= render 'components/sidebar/dropdown',
+      name: :car,
+      icon: 'icon-interface-windows',
+      items: [{name: :tesla, url: root_path }]
+    %>
+  </ul>
+</nav>

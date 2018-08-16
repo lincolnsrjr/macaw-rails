@@ -1,0 +1,18 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-holder d-flex align-items-center justify-content-between">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand d-none d-sm-inline-block">
+            <div class="brand-text d-none d-lg-inline-block"><span><%= name ||= nil %></div>
+            <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong><%= nick ||= nil %></strong></div></a>
+          <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+        </div>
+        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+          <%= render 'components/nav/item', text: 'lincoln.rodrigues', icon: 'fa-user' %>
+          <%= render 'components/nav/item', text: 'Logout', icon: 'fa-sign-out' %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

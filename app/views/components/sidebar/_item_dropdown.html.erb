@@ -1,0 +1,3 @@
+<li class="<%= Components::Sidebar::ItemHelper.active?(name, @sidebar_item_active) ? 'active' : nil %>">
+  <a href="<%= url ||= '#' %>"><%= t(name) %></a>
+</li>
