@@ -1,0 +1,13 @@
+<% key = SecureRandom.hex(3).upcase %>
+<% active = Components::Sidebar::DropdownHelper.active?(items, @sidebar_item_active) %>
+<li>
+  <a href="#<%= name || key %>" aria-expanded="<%= active ? 'true' : 'false' %>" data-toggle="collapse" class="<%= active ? '' : 'collapsed' %>">
+    <i class="<%= icon ||= nil %>"></i><%= t(name) %>
+  </a>
+
+  <ul id="<%= name || key %>" class="collapse list-unstyled <%= active ? 'show' : nil %>">
+    <% items.each do |item| %>
+      <%= render 'components/sidebar/item_dropdown', item %>
+    <% end %>
+  </ul>
+</li>
