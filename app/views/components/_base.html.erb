@@ -1,5 +1,14 @@
 <div class="page">
   <%= render 'components/nav/base', name: 'Macaw', nick: 'MW' %>
-  <%= render 'components/sidebar/base' %>
-  <%= yield %>
+  <div class="page-content d-flex align-items-stretch">
+    <%= render 'components/sidebar/base' %>
+    <div class="content-inner">
+      <header class="page-header">
+        <div class="container-fluid">
+          <h2 class="no-margin-bottom"><%= @page_header %></h2>
+        </div>
+      </header>
+      <%= yield %>
+    </div>
+  </div>
 </div>
