@@ -9,4 +9,11 @@ module DashboardHelper
     ]
   end
 
+  def self.sidebar_item_active
+    :teste
+  end
+
+  def self.index_page_header
+    :teste
+  end
 end
