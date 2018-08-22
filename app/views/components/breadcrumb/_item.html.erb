@@ -1,0 +1,7 @@
+<li class="breadcrumb-item <%= active ||= nil %>">
+  <% if url ||= nil %>
+    <a href="<%= url %>"><%= name ||= nil %></a>
+  <% else %>
+    <%= name ||= nil %>
+  <% end %>
+</li>
